@@ -27,9 +27,9 @@ public class ATM {
     }
 
     public String withdrawal(double amount){
-        int thousands=0;
-        int fiveHundreds=0;
-        int oneHundreds=0;
+        int thousands;
+        int fiveHundreds;
+        int oneHundreds;
 
 
         if(amount>valueOfMoney){
@@ -45,7 +45,7 @@ public class ATM {
 
         ArrayList<Banknote> notesInATMbeforeWithdrawal = new ArrayList<>();
         notesInATMbeforeWithdrawal.addAll(moneyInATM);
-        Double amountInATMbeforeWithdrawal = valueOfMoney;
+        double amountInATMbeforeWithdrawal = valueOfMoney;
 
         thousands = iterateThroughMoney(Banknote.THOUSAND);
 
