@@ -87,20 +87,6 @@ public class ATM {
                 }
             }
         }
-
-//        if(toWithdraw>=note.value){
-//            for (Banknote bill: moneyInATM) {
-//                System.out.println(bill);
-//                if(bill.value==note.value){
-//                    billsToRemove++;
-//                    toWithdraw-=bill.value;
-//                    System.out.println("Left: " + toWithdraw);
-//                    if(toWithdraw<note.value){
-//                        break;
-//                    }
-//                }
-//            }
-//        }
         removeBanknote(note, billsToRemove);
 
         return billsToRemove;
